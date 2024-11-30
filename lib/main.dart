@@ -1,41 +1,46 @@
-import 'package:cssp/pages/College.dart';
-import 'package:cssp/pages/CommonApp.dart';
 import 'package:cssp/pages/Gmail.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(),
+      home: HomeScreen(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
+class HomeScreen extends StatefulWidget {
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final ValueNotifier<bool> _isDrawerOpen = ValueNotifier(false);
+
+  static final List<Widget> _pages = <Widget>[
+    
+    Gmail(),
+    const Center(child: Text('Page 2')),
+    const Center(child: Text('Page 3')),
+  ];
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
         leading: ValueListenableBuilder<bool>(
           valueListenable: _isDrawerOpen,
@@ -46,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 if (isOpen) {
                   Navigator.of(context).pop();
                 } else {
-                  Scaffold.of(context).openDrawer();
+                  _scaffoldKey.currentState?.openDrawer();
                 }
                 _isDrawerOpen.value = !isOpen;
               },
@@ -70,10 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 leading: const Icon(Icons.email),
                 title: const Text('Gmail'),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const Gmail()),
-                  );
+                  _onItemTapped(0);
                 },
               ),
             ),
@@ -84,13 +86,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: ListTile(
-                leading: const Icon(Icons.school),
-                title: const Text('College'),
+                leading: const Icon(Icons.pageview),
+                title: const Text('Page 2'),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const College()),
-                  );
+                  _onItemTapped(1);
                 },
               ),
             ),
@@ -101,31 +100,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: ListTile(
-                leading: const Icon(Icons.assignment),
-                title: const Text('Common App'),
+                leading: const Icon(Icons.pageview),
+                title: const Text('Page 3'),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const CommonApp()),
-                  );
+                  _onItemTapped(2);
                 },
               ),
             ),
           ],
         ),
       ),
-      onDrawerChanged: (isOpen) {
-        _isDrawerOpen.value = isOpen;
-      },
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-          ],
-        ),
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: _pages,
       ),
     );
   }

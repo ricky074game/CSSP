@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.16
 
 dev_dependencies:
   flutter_test:
@@ -52,13 +53,38 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
   assets:
-    - assets/gmail/img.png
+    - assets/gmail/image.png
+    - assets/icon/plus-icon.svg
+    - assets/icon/arrow_back.svg
+    - assets/icon/archive.svg
+    - assets/icon/report.svg
+    - assets/icon/delete.svg
+    - assets/icon/mark_as_unread.svg
+    - assets/icon/clock.svg
+    - assets/icon/add_task.svg
+    - assets/icon/drive_file_move.svg
+    - assets/icon/label.svg
+    - assets/icon/3dots.svg
+    - assets/icon/small-arrow-back.svg
+    - assets/icon/small-arrow-next.svg
+    - assets/icon/print-icon.svg
+    - assets/icon/open-in-new-icon.svg
+    - assets/img/avatar.svg
+    - assets/icon/down-arrow-icon.svg
+    - assets/icon/star-favorite-icon.svg
+    - assets/icon/reply-icon.svg
+    - assets/icon/more-email-options-icon.svg
+    - assets/img/mail-img-placeholder.svg
+    - assets/icon/right-arrow-mail-icon.svg
+    - assets/icon/yellow-title-tag.svg
+    - assets/icon/google-keep.svg
+    - assets/icon/google-calendar.svg
+    - assets/icon/right-bar-plus.svg
+    - assets/img/gmail-logo.png
+    
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
