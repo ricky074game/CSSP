@@ -1,3 +1,6 @@
+import 'package:cssp/pages/College.dart';
+import 'package:cssp/pages/CommonApp.dart';
+import 'package:cssp/pages/Gmail.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -67,6 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 leading: const Icon(Icons.email),
                 title: const Text('Gmail'),
                 onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Gmail()),
+                  );
                 },
               ),
             ),
@@ -77,9 +84,30 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(8),
               ),
               child: ListTile(
-                leading: const Icon(Icons.settings),
-                title: const Text('Settings'),
+                leading: const Icon(Icons.school),
+                title: const Text('College'),
                 onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const College()),
+                  );
+                },
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: ListTile(
+                leading: const Icon(Icons.assignment),
+                title: const Text('Common App'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const CommonApp()),
+                  );
                 },
               ),
             ),
