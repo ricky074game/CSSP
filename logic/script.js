@@ -1061,8 +1061,326 @@ function chanceCollege(collegeList, i, demScore, testOptional, sat, act, extracu
 
     let tier = classify(student_num);
     let chances = 0;
-    // Simplified chance calculation
-    chances = baseChance * 100 + (student_num - 50);
+    if (baseChance < 0.05) { // tier 1
+        if (tier == 1) {
+            chances = (36 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (27 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (21 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (13 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (4 + (Math.random() * 6 - 3));
+        }
+        else if (tier == 6) {
+            chances =  (2 + (Math.random() * 6 - 3));
+        }
+        else if (tier == 7) {
+            chances =  (1 + (Math.random() * 2 - 1));
+        }
+        else if (tier == 8) {
+            chances =  (0.5 + (Math.random() * 0.4 - 0.2));
+        }
+        else if (tier == 9) {
+            chances =  (0.2 + (Math.random() * 0.2 - 0.1));
+        }
+        else if (tier == 10) {
+            chances =  (0.1);
+        }
+        else {
+            chances =  0.05;
+        }
+    }
+    else if (baseChance < 0.1) { // tier 1
+        if (tier == 1) {
+            chances = (46 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (34 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (27 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (19 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (12 + (Math.random() * 6 - 3));
+        }
+        else if (tier == 6) {
+            chances =  (6 + (Math.random() * 6 - 3));
+        }
+        else if (tier == 7) {
+            chances =  (2 + (Math.random() * 2 - 1));
+        }
+        else if (tier == 8) {
+            chances =  (0.5 + (Math.random() * 0.4 - 0.2));
+        }
+        else if (tier == 9) {
+            chances =  (0.2 + (Math.random() * 0.2 - 0.1));
+        }
+        else if (tier == 10) {
+            chances =  (0.1);
+        }
+        else {
+            chances =  0.05;
+        }
+    }
+    else if (baseChance < 0.16) { // tier 2
+        if (tier == 1) {
+            chances =  (57 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (44 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (36 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (27 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (21 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 6) {
+            chances =  (13 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (7 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (3 + (Math.random() * 0.4 - 0.2 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (2 + (Math.random() * 0.2 - 0.1));
+        }
+        else if (tier == 10) {
+            chances =  (1 + (Math.random() * 0.2 - 0.1));
+        }
+        else {
+            chances =  0.5 + (Math.random() * 0.1 - 0.05);
+        }
+    }
+
+    else if (baseChance < 0.25) { // tier 3
+        if (tier == 1) {
+            chances =  (67 + (Math.random() * 10 - 5 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (55 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (41 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (34 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (25 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 6) {
+            chances =  (18 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (11 + (Math.random() * 4 - 2 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (6 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (3 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 10) {
+            chances =  (2 + (Math.random() * 0.2 - 0.1));
+        }
+        else {
+            chances =  0.7 + (Math.random() * 0.2 - 0.1);
+        }
+    }
+
+    else if (baseChance < 0.35) { // tier 4
+        if (tier == 1) {
+            chances =  (74 + (Math.random() * 10 - 5 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (67 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (58 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (48 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (39 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 6) {
+            chances =  (35 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (24 + (Math.random() * 4 - 2 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (21 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (14+ (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 10) {
+            chances =  (7 + (Math.random() * 0.2 - 0.1 - 2));
+        }
+        else {
+            return 3 + (Math.random() * 0.2 - 0.1 - 2);
+        }
+    }
+
+    else if (baseChance < 0.45) { // tier 5
+        if (tier == 1) {
+            chances =  (79 + (Math.random() * 10 - 5 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (71 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (65 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (56 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (49 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 6) {
+            chances =  (41 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (33 + (Math.random() * 4 - 2 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (25 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (18 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 10) {
+            chances =  (12 + (Math.random() * 2 - 1 - 2));
+        }
+        else {
+            chances =  4 + (Math.random() * 0.2 - 0.1 - 2);
+        }
+    }
+
+    else if (baseChance < 0.6) { // tier 6
+        if (tier == 1) {
+            chances =  (85 + (Math.random() * 12 - 6 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (78 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (71 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (65 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (55 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 6) {
+            chances = (46 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (36 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (25 + (Math.random() * 4 - 2 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (16 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 10) {
+            chances =  (7 + (Math.random() * 2 - 1 - 2));
+        }
+        else {
+            chances =  3 + (Math.random() * 2 - 1 - 2);
+        }
+    }
+
+    else if (baseChance < 0.8) { // tier 7
+        if (tier == 1) {
+            chances =  (90 + (Math.random() * 12 - 6 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (87 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (80 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (74 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (65 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 6) {
+            chances =  (56 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (45 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (37 + (Math.random() * 4 - 2 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (26 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 10) {
+            chances =  (16 + (Math.random() * 2 - 1 - 2));
+        }
+        else {
+            chances =  13 + (Math.random() * 2 - 1 - 2);
+        }
+    }
+    else {
+        if (tier == 1) {
+            chances =  (93 + (Math.random() * 12 - 6 - 2));
+        }
+        else if (tier == 2) {
+            chances =  (87 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 3) {
+            chances =  (80 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 4) {
+            chances =  (74 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 5) {
+            chances =  (65 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 6) {
+            chances =  (56 + (Math.random() * 8 - 4 - 2));
+        }
+        else if (tier == 7) {
+            chances =  (45 + (Math.random() * 6 - 3 - 2));
+        }
+        else if (tier == 8) {
+            chances =  (37 + (Math.random() * 4 - 2 - 2));
+        }
+        else if (tier == 9) {
+            chances =  (28 + (Math.random() * 2 - 1 - 2));
+        }
+        else if (tier == 10) {
+            chances =  (24 + (Math.random() * 2 - 1 - 2));
+        }
+        else {
+            chances =  18 + (Math.random() * 2 - 1 - 2);
+        }
+    }
 
     if (app_type === "ED" && collegeList[i][2] !== "N") {
         chances *= parseFloat(collegeList[i][2]);
@@ -1071,8 +1389,27 @@ function chanceCollege(collegeList, i, demScore, testOptional, sat, act, extracu
         chances *= parseFloat(collegeList[i][3]);
     }
 
-    chances = Math.min(Math.max(chances, 0), 100);
+    chances -= Math.random() * 4 - 1;
 
+    if (interviewScore < 2) {
+        chances -= Math.random() * 7;
+    }
+    if (interviewScore > 8) {
+        chances += Math.random() * 7;
+    }
+    if (chances <= 0.0) {
+        chances = 0.0;
+        chances += Math.random() * 1.5;
+    }
+    if (chances >= 100.0) {
+        chances = 100.0;
+        chances -= Math.random() * 3;
+    }
+    if (chances >= 97) {
+        chances -= Math.random() * 6;
+    }
+
+    chances = Math.min(Math.max(chances, 0), 100);
     return Math.round(chances * 100.0) / 100.0;
 }
 
