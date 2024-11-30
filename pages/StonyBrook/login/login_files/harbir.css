@@ -1,0 +1,2030 @@
+/*  Harbir Code  */
+#home-section .movebtndown {
+	display: none;
+}
+
+.hide-accessible {
+	position: absolute !important;
+	top: -99999px !important;
+	left: -99999px !important;
+	width: 2000px !important;
+	height: 2000px !important;
+}
+
+.cbw-edit {
+	display: none;
+}
+
+*, .skytext, #futuresectionmobile .textonblackcircle {
+	font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+}
+
+/* Top nav */
+.collapse.navbar-collapse a {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+}
+
+.sticky_navbar {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.collapse.navbar-collapse .ugadmtext {
+	font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	padding-top: 0;
+	padding-bottom: 0;
+	/* padding-right: calc(1.9rem + 8px); */
+}
+
+.collapse.navbar-collapse .nav-item {
+	padding-top: 9px;
+}
+
+.home-inner .btn-primary {
+	font-weight: bold;
+	border-width: 2px;
+	min-width: 160px;
+	background: url(https://www.stonybrook.edu/commcms/_gargitest/ugadmissionspagedemo/img/button-refractions.png) !important;
+	background-size: cover !important;
+}
+
+#majorssectionmobile .imggirl {
+	z-index: 0 !important;
+	position: relative;
+}
+
+.navbar .searchbartop input {
+	text-transform: uppercase !important;
+	font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+.navbar .searchbartop .topsearch, .navbar .searchbartop .topsearchicon {
+	background: #d1d1d1;
+	color: #4b4b4b !important;
+}
+
+.sticky-search-form .input-group .form-search-input {
+	border-radius: 30px 0 0 30px;
+	color: #4b4b4b;
+	font-weight: 500;
+	text-transform: uppercase;
+	height: 40px;
+}
+
+.sticky-search-form .input-group .button-search-in {
+	border-radius: 0 30px 30px 0 !important;
+	background: #fff;
+	color: #4b4b4b;
+	font-weight: 500;
+	padding-top: 6px;
+	padding-right: 16px;
+	height: 40px;
+}
+
+@media only screen and (min-width: 992px) {
+	.navbar.topbar {
+		max-width: 1800px;
+		margin: 0 auto;
+		background-color: #FFF !important;
+	}
+
+	.navbar .topsearchicon, .sticky-search-form .input-group .button-search-in, .searchfield #search-majors-button , .searchfield #search-majors-button-mobile {
+		padding-right: 20px;
+	}
+
+	.navbar .topsearch, .sticky-search-form .input-group .form-search-input, .searchfield #search-majors-input , .searchfield #search-majors-input-mobile {
+		padding-left: 20px;
+	}
+
+	#sbudiff {
+		background-size: contain;
+		height: 720px;
+		margin-top: 60px;
+		background-position: center;
+	}
+
+	.sidebar ul#additional_links , .sidebar-secnav-page ul#additional_links {
+		left: 0;
+	}
+
+	#section-img {
+		min-height: 50vh !important;
+	}
+
+	.sidebar ul#additional_links li , .sidebar-secnav-page ul#additional_links li {
+		height: 42px;
+	}
+
+	.sidebar ul#additional_links li a , .sidebar-secnav-page ul#additional_links li a {
+		height: 36px;
+		font-size: 11.8px;
+		border-left: 0 !important;
+		border-right: 1px solid #fff;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff !important;
+		background: #990000e3;
+		transition: all 300ms ease-out;
+		width: 104px;
+	}
+
+	#footersection .text-white .fab {
+		margin-right: 10px !important;
+		font-size: 24px;
+		transition: all .175s ease-in-out;
+	}
+
+	#footersection .text-white .fab:hover {
+		color: #d52027;
+	}
+
+	#footersection .university-address-mobile {
+		display: none;
+	}
+
+	#redfooter {
+		padding: 24px 0 !important;
+	}
+
+	#redfooter p {
+		margin-top: 16px;
+	}
+
+	#redfooter p span {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	#redfooter p span+span {
+		border-left: 2px solid #fff;
+	}
+
+	#redfooter .container {
+		max-width: 1160px !important;
+	}
+
+	#footersection .whitebox {
+		width: 500px;
+		padding: 0;
+		margin-bottom: 35px;
+	}
+
+	#footersection .whitebox p {
+		margin-top: 16px;
+	}
+
+	#footersection .whitebox p span {
+		padding-left: 15px;
+		padding-right: 15px;
+		font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+		font-weight: 300;
+	}
+
+	#footersection .whitebox p span:first-child {
+		color: #d52027;
+	}
+
+	#footersection .whitebox p span+span {
+		border-left: 2px solid #fff;
+	}
+
+	.pr-5, .px-5 {
+		padding-right: 2.7rem!important;
+	}
+
+	#wolfiesection .wolfiepic-holder {
+		display: none;
+	}
+
+	.container-width-for-desktop {
+		max-width:100%;
+		overflow: unset;
+
+	}
+
+	.fa-star-holder {
+		/*         visibility: hidden; */
+		/* 		display: none; */
+	}
+
+	.navbar-nav a.nav-item {
+		/* 	transition: all .5s ease; */
+		padding-top: 10px;
+	}
+
+	.navbar-nav a.nav-item:hover {
+		/* 	background: pink; */
+		/* 	border-bottom: 1px solid #fff; */
+	}
+
+	.navbar-nav a.nav-item:after {
+		content: '';
+		width: 0;
+		height: 2px;
+		display: block;
+		right: 0;
+		background: #fff;
+		transition: width .4s ease-in-out;
+		-webkit-transition: width .4s ease-in-out;
+	}
+
+	.navbar-nav a.nav-item:hover:after {
+		width: 100%;
+		left: 0;
+		background: #fff;
+	}
+
+	.sidebar ul#additional_links , .sidebar-secnav-page ul#additional_links {
+		/* top: 226px; */
+		max-width: 10%;
+	}
+
+	.sidebar-fixed {
+		/* 		top: 110px!important; */
+	}
+
+	.skytext {
+		font-size: 28px;
+	}
+
+	.skytext, .majorstext {
+		margin-bottom: 0.3rem;
+	}
+
+	/* Logo covered at about 87px */
+	#futuresection {
+		background-position: 0px;
+		background: linear-gradient(172deg, #ffffff 0%, #fff 50%, #d42026 50.1%, #900 100%);
+	}
+
+	#futuresection h3 {
+		font-size: 50px;
+		font-weight: 700;
+	}
+
+	#futuresection .btn-primary {
+		background-color: transparent !important;
+		font-size: 25px;
+	}
+
+	#futuresection .long-button {
+		padding: 20px 60px !important;
+	}
+
+	#futuresection .btn {
+		border: 2px solid #fff;
+		font-weight: 500;
+		font-size: 26px;
+	}
+
+	#futuresection .btn:hover {
+		box-shadow: 0px 0px 0px 2px #fff;
+	}
+
+	.ugadmtext {
+		margin-right: 50px;
+		border-right: 1px solid #FFF;
+		padding-right: 50px;
+	}
+
+	#placessection {
+		background-image: url('../img/beach-nyc.png');
+	}
+
+	#firststepsitem {
+		background-color: #585858;
+	}
+
+	.sidebar #additional_links a:hover , .sidebar-secnav-page #additional_links a:hover {
+		background-color: #990000;
+		width: 120px;
+	}
+
+	.sidebar ul#additional_links li a , .sidebar-secnav-page ul#additional_links li a {
+		border-left: 2px solid #FFF;
+		border-bottom: 1px solid #FFF;
+	}
+
+	#storybynossection p.fixedwidth {
+		color: #828282;
+		font-weight: bold;
+		text-align: center;
+		line-height: 20px;
+		font-size: 17px;
+		width: 120px;
+		margin-top: 5px;
+	}
+
+	#storybynossection .row {
+		margin-bottom: 3rem;
+	}
+
+	#storybynossection p.footertext {
+		margin-top: 1rem !important;
+	}
+
+	#placessection .boxtopwithtext {
+		border: 2px solid #FFFFFF;
+		opacity: 1;
+		background: #00000075;
+	}
+
+	#placessection .boxtopwithtext h3 {
+		font-size: 48px;
+		font-weight: 800;
+	}
+
+	#wolfiesection {
+		height: 380px;
+	}
+
+	#wolfiesection h2 {
+		margin-top: 15px;
+	}
+
+	#wolfiesection .wolfiepic {
+		display: block;
+	}
+
+	#wolfiesection .wolfiepic img {
+		position: relative;
+		bottom: -15px;
+		transform: scale(1.2);
+		z-index: -1;
+	}
+
+	#placessection .row .box-place-bottom {
+		font-size: 22px;
+		font-weight: 800;
+		/* margin-top: 316px !important; */
+		cursor: pointer;
+	}
+
+	#placessection .row .box-place-top {
+		/* margin-top: 16px; */
+		height: 300px;
+	}
+}
+
+@media only screen and (min-width: 1530px) {
+	.ugadmtext {
+		padding-top: 3px !important;
+		padding-right: 3.2rem !important;
+	}
+
+	.sticky_search_icon {
+		padding-top: 8px;
+	}
+
+	.sticky_logo img {
+		box-shadow: 0 0 0 32px #900 !important;
+		position: relative;
+		background: #900;
+		z-index: -1;
+	}
+
+	#placessection {
+		background-image: url(../img/beach-nyc.png);
+		background-position: center;
+		min-height: 800px;
+	}
+
+	#placessection .row .box-place-bottom {
+		/* margin-top: 466px !important; */
+	}
+
+	#placessection .row .box-place-top {
+		/* margin-top: 166px; */
+		height: 300px;
+	}
+
+	#futuresection h3 {
+		margin-top: 30px;
+	}
+}
+
+@media only screen and (max-width: 1530px) and (min-width: 992px) {
+	.ugadmtext {
+		margin-right: 25px;
+		padding-right: 25px;
+		font-size: 21px;
+	}
+
+	.sticky_logo img {
+		box-shadow: 0 0 0 32px #900 !important;
+		position: relative;
+		background: #900;
+		z-index: -1;
+	}
+
+	#majorssection .container {
+		max-width: 85%!important;
+		overflow: visible;
+	}
+	
+	
+
+	#majorssection .majorstext {
+		font-size: 48px;
+	}
+
+	#majorssection .skytext {
+		font-size: 27px;
+	}
+
+	.navbar-nav .pr-5, .px-5 {
+		padding-right: 1.9rem!important;
+	}
+
+	.nav-link {
+		font-size: 15px;
+	}
+
+	.sticky_search_icon {
+		padding-top: 7px;
+	}
+}
+
+#section-img {
+	background-image: url(../img/171011_SBU_0712.JPG);
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	background-attachment: unset;
+	min-height: 300px;
+	background-color: none;
+	background-position: bottom;
+}
+
+@media only screen and (min-width: 992px) {
+	#section-img {
+		background-attachment: fixed;
+	}
+}
+
+.fa-star:before {
+	color: #990000;
+}
+
+.footer-heading {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+	font-weight: 300;
+	color: #f30e17;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.footer-heading a {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+	font-weight: 300;
+	color: #f30e17 !important;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+#redfooter, #redfootermobile {
+	background-image: url('../img/footer-refractions.png');
+	background-size: cover;
+}
+
+#redfooter p span a, #redfootermobile p span a {
+	color: #fff !important;
+}
+
+#search-majors-input, #search-majors-input-mobile {
+	border: 1px solid #4b4b4b !important;
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Gerogia, serif;
+	color: #000;
+	font-size: 20px;
+	border-radius: 30px 0 0 30px;
+}
+
+#search-majors-button , #search-majors-button-mobile {
+	border: 1px solid #4b4b4b !important;
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Gerogia, serif;
+	color: #000;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 0 30px 30px 0;
+	border-left-color: transparent !important;
+}
+
+#futuresectionmobile {
+	background-position: 0px;
+	background: linear-gradient(172deg, #ffffff 0%, #fff 38%, #d42026 38.1%, #900 100%);
+}
+
+#futuresectionmobile h3 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+#futuresectionmobile .btn-primary {
+	background-color: transparent !important;
+}
+
+#futuresectionmobile .long-button {
+	padding: 10px 10px !important;
+}
+
+#futuresectionmobile .btn {
+	border: 2px solid #fff;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+#storybynossection p.fixedwidth, #storybynossectionmobile p.fixedwidth {
+	color: #4b4b4b;
+	font-weight: bold;
+	text-align: center;
+	line-height: 20px;
+	font-size: 17px;
+/* 	width: 120px; */
+	width: 127px;
+    height: 30px;
+	margin-top: 5px;
+}
+
+#storybynossection .row, #storybynossectionmobile .row {
+	margin-bottom: 3rem;
+}
+
+#storybynossection p.footertext, #storybynossectionmobile p.footertext {
+	margin-top: 1rem !important;
+}
+
+#placessectionmobile h3 {
+	font-size: 36px;
+	font-weight: 800;
+}
+
+#placessectionmobile .placespic {
+	background-position: center;
+	background-size: cover !important;
+	background-attachment: unset;
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+}
+
+#placessectionmobile .cometakealookbtn {
+	border-radius: 0;
+	font-weight: 500;
+	font-size: 24px;
+	padding: 10px 40px;
+}
+
+#wolfiesection .wolfiepic img {
+	position: relative;
+	bottom: -10px;
+	transform: scale(1.2);
+	z-index: -1;
+}
+
+#wolfiesectionmobile .wolfiepic img {
+	position: relative;
+	bottom: -22px;
+	transform: scale(1.2);
+	z-index: -1;
+}
+
+@media (min-width: 993px) and (max-width: 1022px) {
+	.collapse.navbar-collapse .ugadmtext {
+		font-size: 18px;
+	}
+
+	.nav-link {
+		font-size: 12px;
+	}
+
+	.navbar-nav .pr-5, .px-5 {
+		padding-right: 0px!important;
+	}
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 2px;
+		padding-right: 2px!important;
+	}
+
+	.collapse.navbar-collapse .ugadmtext {
+		padding-top: .3125rem;
+	}
+}
+
+@media (min-width: 1023px) and (max-width: 1110px) {
+	.collapse.navbar-collapse .ugadmtext {
+		font-size: 18px;
+	}
+
+	.collapse.navbar-collapse .ugadmtext {
+		padding-top: .3125rem;
+	}
+
+	.nav-link {
+		font-size: 12px;
+	}
+
+	.navbar-nav .pr-5, .px-5 {
+		padding-right: 0px!important;
+	}
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 7px;
+		padding-right: 2px!important;
+	}
+}
+
+@media (min-width: 1111px) and (max-width: 1271px) {
+	.collapse.navbar-collapse .ugadmtext {
+		font-size: 18px;
+	}
+
+	.collapse.navbar-collapse .ugadmtext {
+		padding-top: 7px;
+	}
+
+	.nav-link {
+		font-size: 15px;
+	}
+
+	.navbar-nav .pr-5, .px-5 {
+		padding-right: 0px!important;
+	}
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 7px;
+		padding-right: 15px!important;
+	}
+}
+
+/* Animations */
+@media only screen and (min-width: 992px) {
+	.sticky_logo {
+		animation-name: move-right;
+		transition: all 500ms ease-in-out;
+		animation-duration: .5s;
+	}
+
+	@keyframes move-right {
+		from {
+			transform: translate(-120px, 0px);
+		}
+
+		to {
+			transform: translate(0px, 0px);
+		}
+	}
+
+	.sticky_search_icon {
+		animation-name: move-left;
+		transition: translate 500ms ease-in-out;
+		animation-duration: .5s;
+	}
+
+	.sidebar .sidebar-not-fixed li a {
+		transform: translateX(-110px) !important;
+	}
+
+	.sidebar .sidebar-fixed li a {
+		transform: translateX(0px) !important;
+	}
+
+	@keyframes move-left {
+		from {
+			transform: translate(120px, 0px);
+		}
+
+		to {
+			transform: translate(0px, 0px);
+		}
+	}
+
+	#wolfiesection .wolfiepic-holder.wolfiepic-exit {
+		animation-name: move-right-wolfie;
+		animation-duration: 1.5s;
+		z-index: -1 !important;
+		position: relative;
+	}
+
+	@keyframes move-right-wolfie {
+		0% {
+			transform: translate(0px, 0px);
+		}
+
+		50% {
+			transform: scaleX(-1);
+		}
+
+		100% {
+			transform: translate(600px, 0px) scaleX(-1);
+		}
+	}
+
+	#wolfiesection .wolfiepic-holder.wolfiepic {
+		animation-name: move-left-wolfie;
+		animation-duration: 1.5s;
+		z-index: -1 !important;
+		position: relative;
+		transition: all 1s ease;
+	}
+
+	@keyframes move-left-wolfie {
+		from {
+			transform: translate(600px, 0px);
+		}
+
+		to {
+			transform: translate(0px, 0px);
+		}
+	}
+
+	#storybynossection i.fa-star {
+		animation-name: rotation;
+		animation-duration: 1.2s;
+		/* 		display: inline; */
+		visibility: visible;
+	}
+
+	@keyframes rotation {
+		0% {
+			transform: rotate(0) scale(0);
+		}
+
+		75% {
+			transform: rotate(360deg) scale(1.5);
+		}
+
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	#storybynossection .textbox {
+		width: 0;
+		transition: 1000ms width ease-in-out;
+	}
+
+	#storybynossection .textboxanimation {
+		width: 100px;
+		transition: 1000ms width ease-in-out;
+		transition-delay: 1s;
+	}
+
+	#majorssection .container.fade {
+		opacity: 0;
+	}
+
+	#majorssection .container.fade-in {
+		opacity: 1;
+		transition: opacity 600ms ease-out;
+	}
+
+	#futuresection .rounded-circle, #futuresection .textonblackcircle {
+		transform: scale(0);
+		transition: transform 500ms ease-out;
+	}
+
+	#futuresection .rounded-circle.grow-in, #futuresection .textonblackcircle.grow-in {
+		transform: scale(1);
+	}
+
+	#futuresection .textonblackcircle.grow-in {
+		transition-delay: 500ms;
+	}
+
+	#storybynossection .verticaltext {
+		transition: transform 500ms ease-out;
+		transform: rotate(270deg) translateX(150px);
+	}
+
+	#storybynossection .verticaltext.slidedown {
+		transition: transform 1000ms ease-out;
+		transform: rotate(270deg) translateX(0px);
+	}
+
+	#placessection .box-place-bottom {
+		transition: transform 1000ms ease-out;
+		transform: translateY(300px);
+	}
+
+	#placessection .box-place-bottom.slide-up {
+		transition: transform 500ms ease-out;
+		transform: translateY(0px);
+		transition-delay: 500ms;
+	}
+
+
+}
+
+.sticky_logo img {
+	box-shadow: 0 0 0 32px #900;
+	position: relative;
+	background: #900;
+}
+
+#footersection a, #footersectionmobile a {
+	/* 	text-decoration: none; */
+	color: #fff;
+}
+
+#futuresection .container, #wolfiesection .container {
+	overflow: visible;
+}
+
+#wolfiesection .custom-control-label, #wolfiesectionmobile .custom-control-label {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+#wolfiesection .custom-control-label:before, #wolfiesectionmobile .custom-control-label:before {
+	border: none;
+}
+
+#wolfiesection .custom-control-label::after, #wolfiesectionmobile .custom-control-label::after {
+	border: 1px solid #000;
+}
+
+#wolfiesection .custom-control-label, #wolfiesectionmobile .custom-control-label {
+	text-decoration: none;
+	/* 	transition: all 800ms ease; */
+	color: #990000;
+	background-image: linear-gradient( to right, #4b4b4b, #4b4b4b 50%, #990000 50%);
+	background-size: 200% 100%;
+	background-position: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#wolfiesection .custom-control-label:hover, #wolfiesectionmobile .custom-control-label:hover {
+	/* 	color: #4b4b4b; */
+	transition: all 0.6s cubic-bezier(0.000, 0.000, 0.230, 1);
+	background-position: 0%;
+}
+
+#wolfiesection .custom-control-label:hover::after, #wolfiesectionmobile .custom-control-label:hover::after {
+	border-radius: 0;
+	background-image: url('https://i.ya-webdesign.com/images/checkmark-clipart-large-6.png');
+}
+
+#wolfiesection .custom-checkbox .custom-control-input:checked~.custom-control-label::after, #wolfiesectionmobile .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+	background-image: url('https://i.ya-webdesign.com/images/checkmark-clipart-large-6.png');
+	background-color: #FFF;
+}
+
+#majorssectionmobile .skytext-mobile {
+	visibility: hidden;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 510px) {
+	.skytext {
+		margin-bottom: 0px;
+		font-size: 15px;
+		top: -18px;
+		font-weight: 500;
+		position: relative;
+		visibility: hidden;
+	}
+
+	.skytext-mobile {
+		text-align: center;
+		font-size: 30px;
+		font-weight: 900;
+		visibility: visible !important;
+	}
+
+	.morethantext {
+		font-size: 26px;
+	}
+
+	.majorstext {
+		/* 		margin-top: 5px */
+	}
+
+	#storybynossection .container, #storybynossectionmobile .container {
+		width: 95%;
+	}
+
+	#futuresectionmobile h3 {
+		font-size: 30px;
+	}
+
+	#futuresectionmobile {
+		height: 440px;
+	}
+
+	#storybynossection .col-6:nth-child(odd), #storybynossectionmobile .col-6:nth-child(odd) {
+		border-right: 2px solid #900;
+	}
+
+	#storybynossection .col-6:first-child, #storybynossection .col-6:nth-child(2), #storybynossectionmobile .col-6:first-child, #storybynossectionmobile .col-6:nth-child(2) {
+		border-bottom: 2px solid #900;
+	}
+
+	#storybynossectionmobile .col-6:nth-child(3) .card, #storybynossectionmobile .col-6:nth-child(4) .card {
+		margin-top: 10px;
+	}
+
+	#storybynossectionmobile .col-6 .card h4 {
+		margin-bottom: 0;
+	}
+
+	#sbudiff, #sbudiffmobile {
+		background-size: contain;
+		height: 250px;
+	}
+
+	#placessectionmobile h3 {
+		font-size: 32px;
+	}
+
+	#placessectionmobile .whitearea .text-center {
+		margin-top: 0 !important;
+	}
+
+	#wolfiesection h2, #wolfiesectionmobile h2 {
+		text-align: center !important;
+	}
+}
+
+@media only screen and (min-width: 510px) and (max-width: 768px) {
+	#majorssectionmobile .skytext {
+		font-size: 24px !important;
+		margin-bottom: 0;
+	}
+
+	#majorssectionmobile .imggirl {
+		top: -17px;
+	}
+
+	#storybynossectionmobile .col-6 .card h4 {
+		margin-bottom: 0;
+	}
+
+	#sbudiff, #sbudiffmobile {
+		background-size: contain;
+		height: 250px;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 992px) {
+	#futuresectionmobile {
+		height: 550px !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	#wolfiesectionmobile .wolfiepic img {
+		transform: scale(1.5);
+	}
+
+	#wolfiesectionmobile .custom-control {
+		padding-right: 0px;
+	}
+
+	#wolfiesectionmobile .custom-control-label {
+		font-size: 15px;
+	}
+
+	#futuresectionmobile .row.mt-3 {
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	nav .logomobile {
+		text-align: center;
+		padding: 15px;
+	}
+
+	#mp-menu .mobile-sidebar-header a {
+		font-weight: 600;
+		font-size: 1.1rem;
+		padding: 5px 0;
+		width: 80%;
+	}
+
+	#home-section, #home-sectionmobile {
+/* 		height: 50vh; */
+/* 		height: 64vh; */
+	}
+	
+
+	#sbudiff, #section-img, #sbudiffmobile, #section-imgmobile {
+		/*     	display: none; */
+	}
+
+	#wolfiesectionmobile h2 {
+		font-weight: 900;
+		margin-bottom: 0;
+	}
+
+	#wolfiesectionmobile .col-sm-8 {
+		margin-bottom: 15px !important;
+	}
+
+	#wolfiesectionmobile .col-md-3 {
+		padding-left: 40px;
+	}
+
+	#storybynossectionmobile .footertext {
+		font-size: 11px;
+	}
+
+	#redbanddividermobile {
+		background: url(../img/red-refractions.png);
+		height: 75px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-top: 10%;
+		background-position: center;
+	}
+
+	#section-img, #section-imgmobile {
+		/* min-height: 50px !important; */
+	}
+
+	#section-imgmobile {
+		background-image: url(../img/171011_SBU_0712.JPG);
+		background-repeat: no-repeat;
+		background-size: cover !important;
+		/* background-attachment: fixed; */
+		min-height: 300px;
+		background-position: center;
+	}
+
+	#footersection .whitebox, #footersectionmobile .whitebox {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 35px;
+		border: none;
+		border-top: 1px solid #fff;
+	}
+
+	#footersection .whitebox p, #footersectionmobile .whitebox p {
+		margin-top: 16px;
+	}
+
+	#footersectionmobile .row.pt-5.pb-5 {
+		padding-top: 0 !important;
+	}
+
+	#footersectionmobile .footer-heading {
+		margin-top: 15px;
+	}
+
+	#footersection .whitebox p span, #footersectionmobile .whitebox p span {
+		padding-left: 15px;
+		padding-right: 15px;
+		font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+		font-weight: 300;
+	}
+
+	#footersection .whitebox p span:first-child, #footersectionmobile .whitebox p span:first-child {
+		color: #d52027;
+		display: block;
+	}
+
+	#footersection .whitebox p span+span, #footersectionmobile .whitebox p span+span {
+		border-left: 2px solid #828282;
+	}
+
+	#footersection .whitebox p span:nth-child(2), #footersectionmobile .whitebox p span:nth-child(2) {
+		border: none;
+	}
+
+	#footersection .university-address-desktop, #footersection .social-icons-desktop, #redfooter, #footersectionmobile .university-address-desktop, #footersectionmobile .social-icons-desktop, #redfootermobile {
+		display: none;
+	}
+
+	#redfootermobile {
+		display: block;
+		text-align: center;
+	}
+
+	#redfootermobile p span + span {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	#redfootermobile p span:first-child {
+		width: 100%;
+		display: block;
+	}
+
+	#redfootermobile p span + span {
+		border-right: 1px solid #fff;
+	}
+
+	#redfootermobile p span:last-child {
+		border-right: 0px solid #fff;
+	}
+
+	#footersection .university-address-mobile, #footersectionmobile .university-address-mobile {
+		border-top: 1px solid #fff;
+		padding: 20px 0 27px;
+	}
+
+	#footersectionmobile .further-faster-logo {
+		display: none;
+	}
+
+	#footersection .university-address-mobile .text-white, #footersectionmobile .university-address-mobile .text-white {
+		font-size: 24px;
+		padding: 15px;
+	}
+
+	#footersection .university-address-mobile .text-white i, #footersectionmobile .university-address-mobile .text-white i {
+		margin: 0 15px;
+	}
+
+	.mobile-navbar .undergradtext {
+		font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+		font-weight: 500;
+	}
+
+	#search-form-submit1 {
+		border-color: transparent !important;
+	}
+
+	#search-form-submit1 .gotext {
+		color: #000;
+		font-weight: 500;
+		position: relative;
+		bottom: 2px;
+	}
+
+	#form-search-mobile {
+		margin-top: 18px !important;
+	}
+}
+
+/* Apply Page */
+#whitebandtitle, #whitebandtitle-mobile {
+	background: #ffffff8c;
+	opacity: 1;
+	top: 564px;
+}
+
+@media only screen and (min-width: 1531px) {
+	#whitebandtitle {
+		background: #ffffff8c;
+		opacity: 1;
+		top: 564px;
+	}
+}
+
+#whitebandtitle .college-header {
+	font-weight: bold;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+#redbandtitle, #redbandtitle-mobile {
+	background: linear-gradient(to right,#990000,#d52027);
+}
+
+/* Why Study */
+#whystudysection .redraybox .btn {
+	max-width: 225px;
+	font-weight: bold;
+	text-align: left;
+	padding-right: 45px;
+	padding-top: 10px;
+	font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+}
+
+#whystudysection .redraybox .btn:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+#whystudysection .redheader, #whystudysection-mobile .redheader {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+	font-weight: normal;
+	font-size: 26px;
+}
+
+#whystudysection .listofstudies span {
+	font-weight: bold;
+	margin-left: 3px;
+	margin-right: 10px;
+}
+
+/* Band 2 */
+.redband-small p {
+	font-weight: 800;
+	font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+	margin: 0;
+	margin-left: 20px !important;
+}
+
+#band2section .col-md-6 li {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+#band2section .col-md-6 li:before {
+	color: #900;
+}
+
+.samplecoursesbox ul li:before, .admissioninfobox ul li:before {
+	content: "\25A0  ";
+	font-family: FontAwesome;
+	font-weight: bold;
+	color: #900;
+}
+
+.samplecoursesbox ul li span, .admissioninfobox ul li span {
+	color: #000;
+}
+
+.samplecoursesbox ul li, .admissioninfobox ul li {
+	font-weight: bold;
+}
+
+#band2section .adminfotxt {
+	margin-left: 20px;
+}
+
+/* Expsection */
+#expsection .redheader, #expsection-mobile .redheader {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif;
+	font-weight: normal;
+	font-size: 26px;
+}
+
+#expsection .col-sm-3 div .text-center {
+	font-family: "museo-slab", "Museo Slab W01", "Museo Slab", Georgia, serif !important;
+	margin: 5px 0;
+}
+
+#expsection .simple-text {
+	color: #4b4b4b;
+}
+
+#expsection a:hover {
+	text-decoration: none !important;
+}
+
+#expsection a div {
+	text-decoration: none;
+	display: block;
+	/* 	border: 1px solid black; */
+	/* z-index: 10; */
+	position: relative;
+	transition: 300ms color ease, 300ms background ease;
+}
+
+#expsection .col-sm-3:hover a .grey {
+	background: #000;
+}
+
+#expsection .col-sm-3:hover a .red {
+	color: #FFF;
+}
+
+/* band3section */
+.samplecoursesbox ul, .admissioninfobox ul {
+	padding-left: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+	#band2section {
+		/*         background-attachment: fixed; */
+		background-size: cover;
+	}
+}
+
+/* Apply Mobile */
+@media only screen and (max-width: 992px) {
+
+	.container-width-for-desktop {
+		max-width:1140px;		
+	}
+
+	#hero-img-section-acaedimcs-mobile {
+		background-size: cover !important;
+		/*     	background-position: right; */
+		/*         background-position: -540px 60px; */
+		/* 		background-position: -350px 120px; */
+	}
+
+	#whitebandtitle-mobile {
+		top: 222px;
+	}
+
+	#redbandtitle-mobile .py-3 {
+		padding-top: 20px !important;
+	}
+
+	#whitebandtitle-mobile .college-header {
+		margin: 10px auto;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#redbandtitle-mobile .main-header {
+		font-weight: bold;
+
+	}
+
+	/*  Why Study  */
+	#whystudysection-mobile .textpart {
+		padding: 0;
+	}
+
+	#whystudysection-mobile .redheader {
+		font-size: 24px;
+	}
+
+	#whystudysection-mobile .otherpart {
+		padding: 0;
+	}
+
+	#whystudysection-mobile .otherpart li {
+		display: block;
+		margin-bottom: 5px;
+		margin-left: 10px;
+		font-weight: bold;
+	}
+
+	#whystudysection-mobile .rightsidecontent {
+		margin: 0;
+		padding: 0;
+	}
+
+	#whystudysection-mobile .redraybox .btn {
+		max-width: 225px;
+		font-weight: bold;
+		text-align: left;
+		padding-right: 45px;
+		padding-top: 10px;
+		font-family: "Effra", "Effra W01", Helvetica, sans-serif;
+	}
+
+	#whystudysection-mobile .silo-in-box {
+		background-image: none;
+	}
+
+	#whystudysection-mobile .textontop {
+		/*     	width: 100%; */
+	}
+
+	#expsection-mobile .redheader {
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	#expsection-mobile .col-md-3 {
+		margin-bottom: 50px;
+	}
+
+	.samplecoursesbox, .admissioninfobox {
+		margin: 40px 30px;
+	}
+}
+
+@media (max-width: 600px) {
+	#hero-img-section-acaedimcs-mobile {
+		/*         background-position: -938px 60px; */
+	}
+}
+
+/* New Changes */
+.relatedmajorsbox a {
+	color: #fff;
+}
+
+.relatedmajorsbox div {
+	transition: .5s background ease;
+}
+
+.relatedmajorsbox div:hover {
+	background: #000;
+}
+
+#lastsection .redheader {
+	line-height: 1.3;
+}
+
+@media only screen and (max-width: 991px) {
+	#expsection .overlay {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	#expsection-mobile .imgbox img {
+		display: none;
+	}
+
+	#expsection-mobile .overlay {
+		position: relative;
+		top: 0px;
+		bottom: 0;
+		/* 		left: 35px; */
+		right: 0;
+		z-index: 1000;
+		height: 250px;
+		width: 100%;
+		/* 		opacity: 0; */
+		transition: .5s ease;
+		background: linear-gradient(to right,#6b000d,#d52027);
+		z-index: 10;
+		/* 		border: 10px solid black; */
+	}
+
+	#expsection-mobile .imgbox:hover .overlay, #expsection-mobile .imgbox:active .overlay {
+		opacity: 1;
+	}
+
+	#expsection-mobile .text {
+		color: white;
+		font-size: 14px;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		width: 200px;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: ;
+		text-align: center;
+		line-height: 1.3;
+	}
+
+	#expsection-mobile .exp-link {
+		bottom: 20px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		color: #fff;
+		font-size: 11px;
+		border: 2px solid #fff;
+		padding: 6px 8px;
+		transition: 1s background ease;
+		text-transform: uppercase;
+	}
+
+	#expsection-mobile .exp-link:hover {
+		background: #000;
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	#expsection .overlay {
+		position: absolute;
+		top: 0px;
+		bottom: 0;
+		left: 35px;
+		right: 0;
+		z-index: 1000;
+		height: 195px;
+		width: 177.5px;
+		opacity: 0;
+		transition: .5s ease;
+		background: linear-gradient(to right,#6b000d,#d52027);
+		z-index: 10;
+	}
+
+	#expsection .imgbox:hover .overlay, #expsection .imgbox:active .overlay {
+		opacity: 1;
+	}
+
+	#expsection .text {
+		color: white;
+		font-size: 14px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 200px;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: ;
+		text-align: center;
+		line-height: 1.3;
+	}
+
+	#expsection .exp-link {
+		bottom: 10px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		color: #fff;
+		font-size: 11px;
+		border: 2px solid #fff;
+		padding: 3px 4px;
+		transition: 1s background ease;
+		text-transform: uppercase;
+	}
+
+	#expsection .exp-link:hover {
+		background: #000;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#expsection .overlay {
+		position: absolute;
+		top: 0px;
+		bottom: 0;
+		left: 35px;
+		right: 0;
+		z-index: 1000;
+		height: 245px;
+		width: 222.5px;
+		opacity: 0;
+		transition: .5s ease;
+		background: linear-gradient(to right,#6b000d,#d52027);
+		z-index: 10;
+	}
+
+	#expsection .imgbox:hover .overlay, #expsection .imgbox:active .overlay {
+		opacity: 1;
+	}
+
+	#expsection .text {
+		color: white;
+		font-size: 14px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 200px;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: ;
+		text-align: center;
+		line-height: 1.3;
+	}
+
+	#expsection .exp-link {
+		bottom: 10px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		color: #fff;
+		font-size: 13px;
+		border: 2px solid #fff;
+		padding: 5px 10px;
+		transition: 1s background ease;
+		text-transform: uppercase;
+	}
+
+	#expsection .exp-link:hover {
+		background: #000;
+	}
+}
+
+/* Pop Up START */
+#alumnispotlightsection .lightbox {
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: scroll;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+#alumnispotlightsection .lightbox-container {
+	position: relative;
+	max-width: 1160px;
+	margin: 7% auto;
+	display: block;
+	padding: 0 3%;
+	height: auto;
+	z-index: 10000000000;
+}
+
+@media screen and (max-width: 768px) {
+	#alumnispotlightsection .lightbox-container {
+		margin-top: 10%;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	#alumnispotlightsection .lightbox-container {
+		margin-top: 13%;
+	}
+}
+
+#alumnispotlightsection .lightbox-content {
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+#alumnispotlightsection .lightbox-close {
+	text-transform: uppercase;
+	background: transparent;
+	position: absolute;
+	font-weight: 300;
+	font-size: 12px;
+	display: block;
+	border: none;
+	color: white;
+	top: -22px;
+	right: 3%;
+}
+
+#alumnispotlightsection .video-container {
+	padding-bottom: 56.25%;
+	position: relative;
+	padding-top: 30px;
+	overflow: hidden;
+	height: 0;
+}
+
+#alumnispotlightsection .video-container iframe, #alumnispotlightsection .video-container object, #alumnispotlightsection .video-container embed {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+#alumnispotlightsection .spotlight-video {
+	height: 0px;
+	text-align: center;
+	/* background: #ebebeb; */
+	position: relative;
+	top: 40px;
+}
+
+#alumnispotlightsection .spotlight-video img {
+	position: relative;
+	/* bottom: 100px; */
+	width: 90%;
+	cursor: pointer;
+}
+
+#alumnispotlightsection .social-mobility-spotlight .spotlight-pretext {
+	color: #990000;
+	font-weight: bold;
+	font-size: 12pt;
+	/*     padding-top: 50px; */
+}
+
+#alumnispotlightsection .social-mobility-spotlight .spotlight-header {
+	font-size: 28pt !important;
+	line-height: 1.2 !important;
+	padding-top: 0;
+	font-weight: 900;
+	margin-bottom: 0;
+	margin-top: 0px;
+}
+
+#alumnispotlightsection .social-mobility-spotlight .spotlight-body {
+	font-size: 16pt !important;
+	font-family: 'Zilla Slab';
+	font-weight: 500;
+	line-height: 26px;
+}
+
+#alumnispotlightsection .social-mobility-spotlight {
+	position: relative;
+	background: white;
+	text-align: left;
+	margin: 0 auto;
+	left: 50%;
+	bottom: 150px;
+	z-index: 0;
+	transform: translateX(-50%);
+	width: 70%;
+	/*     border: 1px solid; */
+	padding: 25px;
+}
+
+#alumnispotlightsection .pop-up-video-wrapper {
+	/*     position: absolute;
+	bottom: -960px;
+	width: 100%; */
+}
+
+@media only screen and (max-width: 1024px) {
+	#alumnispotlightsection .social-mobility-spotlight .spotlight-header {
+		font-size: 22pt !important;
+		line-height: 1.2 !important;
+	}
+
+	#alumnispotlightsection .social-mobility-spotlight .spotlight-body {
+		font-size: 14pt !important;
+		line-height: 24px;
+	}
+
+	#alumnispotlightsection .social-mobility-spotlight {
+		position: static;
+		background: white;
+		text-align: left;
+		margin: 0 auto;
+		width: 90%;
+		padding: 25px;
+		transform: none;
+	}
+
+	#alumnispotlightsection .spotlight-video {
+		height: auto;
+		background: #70000b !important;
+	}
+
+	#alumnispotlightsection .spotlight-video img {
+		margin-top: 25px;
+	}
+}
+
+/* Pop Up END */
+/* Pop Up Mobile START */
+#alumnispotlightsection-mobile .lightbox {
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: scroll;
+	position: fixed;
+	display: none;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+}
+
+#alumnispotlightsection-mobile .lightbox-container {
+	position: relative;
+	max-width: 1160px;
+	margin: 7% auto;
+	display: block;
+	padding: 0 3%;
+	height: auto;
+	z-index: 10000000000000;
+}
+
+@media screen and (max-width: 768px) {
+	#alumnispotlightsection-mobile .lightbox-container {
+		margin-top: 40%;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	#alumnispotlightsection-mobile .lightbox-container {
+		margin-top: 40%;
+	}
+}
+
+#alumnispotlightsection-mobile .lightbox-content {
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+#alumnispotlightsection-mobile .lightbox-close {
+	text-transform: uppercase;
+	background: transparent;
+	position: absolute;
+	font-weight: 300;
+	font-size: 12px;
+	display: block;
+	border: none;
+	color: white;
+	top: -22px;
+	right: 3%;
+}
+
+#alumnispotlightsection-mobile .video-container {
+	padding-bottom: 56.25%;
+	position: relative;
+	padding-top: 30px;
+	overflow: hidden;
+	height: 0;
+}
+
+#alumnispotlightsection-mobile .video-container iframe, #alumnispotlightsection-mobile .video-container object, #alumnispotlightsection-mobile .video-container embed {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+#alumnispotlightsection-mobile .spotlight-video {
+	height: 0px;
+	text-align: center;
+	/* background: #ebebeb; */
+	position: relative;
+	top: 40px;
+}
+
+#alumnispotlightsection-mobile .spotlight-video img {
+	position: relative;
+	/* bottom: 100px; */
+	width: 90%;
+	cursor: pointer;
+}
+
+#alumnispotlightsection-mobile .social-mobility-spotlight .spotlight-pretext {
+	color: #990000;
+	font-weight: bold;
+	font-size: 12pt;
+	/*     padding-top: 50px; */
+}
+
+#alumnispotlightsection-mobile .social-mobility-spotlight .spotlight-header {
+	font-size: 28pt !important;
+	line-height: 1.2 !important;
+	padding-top: 0;
+	font-weight: 900;
+	margin-bottom: 0;
+	margin-top: 0px;
+}
+
+#alumnispotlightsection-mobile .social-mobility-spotlight .spotlight-body {
+	font-size: 16pt !important;
+	font-family: 'Zilla Slab';
+	font-weight: 500;
+	line-height: 26px;
+}
+
+#alumnispotlightsection-mobile .social-mobility-spotlight {
+	position: relative;
+	background: white;
+	text-align: left;
+	margin: 0 auto;
+	left: 50%;
+	bottom: 150px;
+	z-index: 0;
+	transform: translateX(-50%);
+	width: 70%;
+	/*     border: 1px solid; */
+	padding: 25px;
+}
+
+#alumnispotlightsection-mobile .pop-up-video-wrapper {
+	/*     position: absolute;
+	bottom: -960px;
+	width: 100%; */
+}
+
+@media only screen and (max-width: 1024px) {
+	#alumnispotlightsection-mobile .social-mobility-spotlight .spotlight-header {
+		font-size: 22pt !important;
+		line-height: 1.2 !important;
+	}
+
+	#alumnispotlightsection-mobile .social-mobility-spotlight .spotlight-body {
+		font-size: 14pt !important;
+		line-height: 24px;
+	}
+
+	#alumnispotlightsection-mobile .social-mobility-spotlight {
+		position: static;
+		background: white;
+		text-align: left;
+		margin: 0 auto;
+		width: 90%;
+		padding: 25px;
+		transform: none;
+	}
+
+	#alumnispotlightsection-mobile .spotlight-video {
+		height: auto;
+		background: #70000b !important;
+	}
+
+	#alumnispotlightsection-mobile .spotlight-video img {
+		margin-top: 25px;
+	}
+}
+
+/* Pop Up Mobile END */
+#alumnispotlightsection .rightside div.btn {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+#lastsection .external-button:hover {
+	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABgElEQVRIS+2Vuy8EURSHvzOiVAmJmXsbhX9AtBKJaDQaCZUEhSBEKSqthMIjIhKRCL1HglqvRnRzN5vNthS7so6MDJG1dx8eFVPOnXu+ud/5nVzhlx/55fr8UUA+n28pFApbQPObYlV9FpFlY8zdR+1eRc65NaDD06MLYA8IPqyriMxFUbRZE+CcuwW6PMUVGFfVbhGZgfc+Ju9njDHbVQHOuUHgGLgyxvT5UuacWwUWvgo4ASaMMfuVAHEcb4jIbLpWApqA+hSlJzgRkflyn0nBsuKPQL+IJMomG1FUEVBePAiC3jAMr6sN66cU+U4Qx/GmiEynzh9VdVhERoMg2A3D8MoHqQuQ5v4eaAdetQCtwJmqzltr178FSDZns9meUqm0o6pL1trzWr16A346QSaTGVHVQ1VdtNau+P4s/e6o0nBVnYNcLtdZLBZvgAcRufQAnoABoE1EhqIoOq1bURrFpKFTab59e5PJPTDGjDWUop++H/7ofdCIxn9FNW29ABUjqRlq366hAAAAAElFTkSuQmCC), auto !important;
+}
+
+#relatedmajorssection .related-majors-heading, #relatedmajorssection-mobile .related-majors-heading {
+	text-align: center;
+	border-bottom: 1px solid #fff;
+	padding: 16px 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+/* Styles for silo box on program pages */
+@media only screen and (min-width: 992px) {
+	.rightsidecontent {
+		padding-left: 0;
+	}
+
+	.rightsidecontent .redraybox {
+		width: 100% !important;
+	}
+
+	#band2section .col-md-6:nth-child(2), #whystudysection .col-sm-6:nth-child(2), #band3section .col-sm-6:nth-child(2) {
+		padding-left: 60px
+	}
+
+	#band2section .col-md-6:nth-child(1), #whystudysection .col-sm-6:nth-child(1), #band3section .col-sm-6:nth-child(1) {
+		padding-right: 60px
+	}
+}
+
+#whystudysection .rightsidecontent .redraybox .silo-in-box {
+	width: 100%;
+}
+
+#whystudysection .rightsidecontent .redraybox .silo-in-box img {
+	position: absolute;
+	width: 120%;
+	right: -24px !important;
+	bottom: -64px;
+	z-index: 0;
+}
+
+.program-back-link {
+	color: #990000;
+	font-weight: bold;
+	transition: all .5s ease;
+	position: relative;
+	display: block;
+	/*     right: 10px; */
+	transform: translateX(10px);
+}
+
+.program-back-link::before {
+	content: "\f105";
+	/* content: "< "; */
+	font-family: Font Awesome\ 5 Free;
+	transition: all 1s ease;
+	position: relative;
+	display: inline-block;
+	transform: translateX(-5px) translateY(1px) rotate(180deg);
+	/*     right: 15px; */
+}
+
+.program-back-link:hover {
+	transform: translateX(-7px);
+	color: #000;
+	text-decoration: none;
+}
+
+.program-back-link:hover::before {
+	/*     transform: translateX(0px); */
+	opacity: 0;
+	/*     transition: all 1s ease; */
+}
+
+/* External Link Icon */
+a[target="_blank"] {
+	cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABgElEQVRIS+2Vuy8EURSHvzOiVAmJmXsbhX9AtBKJaDQaCZUEhSBEKSqthMIjIhKRCL1HglqvRnRzN5vNthS7so6MDJG1dx8eFVPOnXu+ud/5nVzhlx/55fr8UUA+n28pFApbQPObYlV9FpFlY8zdR+1eRc65NaDD06MLYA8IPqyriMxFUbRZE+CcuwW6PMUVGFfVbhGZgfc+Ju9njDHbVQHOuUHgGLgyxvT5UuacWwUWvgo4ASaMMfuVAHEcb4jIbLpWApqA+hSlJzgRkflyn0nBsuKPQL+IJMomG1FUEVBePAiC3jAMr6sN66cU+U4Qx/GmiEynzh9VdVhERoMg2A3D8MoHqQuQ5v4eaAdetQCtwJmqzltr178FSDZns9meUqm0o6pL1trzWr16A346QSaTGVHVQ1VdtNau+P4s/e6o0nBVnYNcLtdZLBZvgAcRufQAnoABoE1EhqIoOq1bURrFpKFTab59e5PJPTDGjDWUop++H/7ofdCIxn9FNW29ABUjqRlq366hAAAAAElFTkSuQmCC), auto !important;
+}
+/* PDF Icon */
+a[href$=".pdf"]:after, .pdf-icon-after:after {
+	content: "\f1c1";
+	font-family: Font Awesome\ 5 Free;
+	margin-left: 5px;
+}
+
+/* Adding css animation to SBU Diff on Homepage */
+/* .hear-my-story-img-button {
+	animation: mymove .5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+@keyframes mymove {
+	from {
+		transform: scale(1) rotate(3deg);
+	}
+
+	to {
+		transform: scale(1.05);
+	}
+}
+
+.hear-my-story-img-button {
+	position: absolute;
+	bottom: 7.4%;
+	left: 66.2%;
+	width: 16%;
+}
+
+/* Slimmer Black nav */
+@media only screen and (min-width: 992px) {
+    .sticky_navbar {
+        padding: 1rem;
+    }
+    .sticky_logo img {
+        box-shadow: 0px 0px 0 16px #900, 10px -4px 0 20px #900, -12px -4px 0 20px #900 !important;
+        left: 16px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1900px) {
+	
+	#majorssection .container {
+		overflow: visible;
+	}
+}
