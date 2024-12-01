@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:cssp/pages/gmail_list.dart'; // Add this import
 
 class Gmail extends StatelessWidget {
+  final Map<String, String> email;
+
+  Gmail({required this.email});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,6 +27,7 @@ class Gmail extends StatelessWidget {
                 color: Color(0xFF606367),
                 fontSize: 22,
                 fontWeight: FontWeight.w500,
+                fontFamily: 'Roboto',
               ),
             ),
           ],
@@ -60,18 +66,21 @@ class Gmail extends StatelessWidget {
                 // Compose Button
                 Padding(
                   padding: const EdgeInsets.all(12.0),
-                  child: ElevatedButton.icon(
-                    onPressed: () {},
-                    icon: SvgPicture.asset('assets/icon/plus-icon.svg',
-                        height: 24),
-                    label: const Text('Compose'),
-                    style: ElevatedButton.styleFrom(
-                      foregroundColor: const Color(0xFF777b7e),
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(27),
+                  child: Align(
+                    alignment: Alignment.centerLeft,
+                    child: ElevatedButton.icon(
+                      onPressed: () {},
+                      icon: SvgPicture.asset('assets/icon/plus-icon.svg',
+                          height: 24),
+                      label: const Text('Compose'),
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: const Color(0xFF777b7e),
+                        backgroundColor: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(27),
+                        ),
+                        elevation: 1,
                       ),
-                      elevation: 1,
                     ),
                   ),
                 ),
@@ -80,59 +89,35 @@ class Gmail extends StatelessWidget {
                   child: ListView(
                     children: [
                       _buildMenuItem(
-                        icon: 'assets/icon/inbox-icon.svg',
+                        icon: Icons.inbox,
                         text: 'Inbox',
                         count: '99',
                         selected: true,
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/starred-icon.svg',
+                        icon: Icons.star,
                         text: 'Starred',
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/snoozed-icon.svg',
+                        icon: Icons.snooze,
                         text: 'Snoozed',
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/important-icon.svg',
+                        icon: Icons.label_important,
                         text: 'Important',
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/sent-icon.svg',
+                        icon: Icons.send,
                         text: 'Sent',
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/trash-icon.svg',
+                        icon: Icons.delete,
                         text: 'Trash',
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/drafts-icon.svg',
+                        icon: Icons.drafts,
                         text: 'Drafts',
                         count: '14',
-                      ),
-                      _buildMenuItem(
-                        icon: 'assets/icon/starred-icon.svg',
-                        text: 'Categories',
-                      ),
-                      _buildMenuItem(
-                        icon: 'assets/icon/green-tag.svg',
-                        text: 'Team',
-                      ),
-                      _buildMenuItem(
-                        icon: 'assets/icon/yellow-tag.svg',
-                        text: 'News',
-                      ),
-                      _buildMenuItem(
-                        icon: 'assets/icon/blue-tag.svg',
-                        text: 'Work',
-                      ),
-                      _buildMenuItem(
-                        icon: 'assets/icon/red-tag.svg',
-                        text: 'Personal',
-                      ),
-                      _buildMenuItem(
-                        icon: 'assets/icon/arrow-icon.svg',
-                        text: 'More',
                       ),
                     ],
                   ),
@@ -154,15 +139,16 @@ class Gmail extends StatelessWidget {
                           style: TextStyle(
                             color: Color(0xFF414244),
                             fontSize: 14,
+                            fontFamily: 'Roboto',
                           ),
                         ),
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/meet-icon.svg',
+                        icon: Icons.video_call,
                         text: 'New meeting',
                       ),
                       _buildMenuItem(
-                        icon: 'assets/icon/calendar-meet-icon.svg',
+                        icon: Icons.calendar_today,
                         text: 'My meetings',
                       ),
                     ],
@@ -192,58 +178,78 @@ class Gmail extends StatelessWidget {
                           Row(
                             children: [
                               IconButton(
-                                icon: const Icon(Icons.arrow_back),
+                                icon: const Icon(Icons.arrow_back, size: 18),
+                                onPressed: () {
+                                  Navigator.pushReplacement(
+                                    context,
+                                    PageRouteBuilder(
+                                      pageBuilder:
+                                          (context, animation1, animation2) =>
+                                              GmailList(),
+                                      transitionDuration: Duration.zero,
+                                      reverseTransitionDuration: Duration.zero,
+                                    ),
+                                  );
+                                },
+                              ),
+                              IconButton(
+                                icon: const Icon(Icons.archive, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.archive),
+                                icon: const Icon(Icons.report, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.report),
-                                onPressed: () {},
-                              ),
-                              IconButton(
-                                icon: const Icon(Icons.delete),
+                                icon: const Icon(Icons.delete, size: 18),
                                 onPressed: () {},
                               ),
                               const VerticalDivider(),
                               IconButton(
-                                icon: const Icon(Icons.mark_as_unread),
+                                icon:
+                                    const Icon(Icons.mark_as_unread, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.access_time),
+                                icon: const Icon(Icons.access_time, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.add_task),
+                                icon: const Icon(Icons.add_task, size: 18),
                                 onPressed: () {},
                               ),
                               const VerticalDivider(),
                               IconButton(
-                                icon: const Icon(Icons.drive_file_move),
+                                icon:
+                                    const Icon(Icons.drive_file_move, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.label),
+                                icon: const Icon(Icons.label, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.more_vert),
+                                icon: const Icon(Icons.more_vert, size: 18),
                                 onPressed: () {},
                               ),
                             ],
                           ),
                           Row(
                             children: [
-                              const Text('1 of 16'),
+                              const Text(
+                                '1 of 16',
+                                style: TextStyle(
+                                  fontFamily: 'Roboto',
+                                ),
+                              ),
                               IconButton(
-                                icon: const Icon(Icons.arrow_back_ios),
+                                icon:
+                                    const Icon(Icons.arrow_back_ios, size: 18),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: const Icon(Icons.arrow_forward_ios),
+                                icon: const Icon(Icons.arrow_forward_ios,
+                                    size: 18),
                                 onPressed: () {},
                               ),
                             ],
@@ -258,17 +264,18 @@ class Gmail extends StatelessWidget {
                           children: [
                             Row(
                               children: [
-                                const Text(
-                                  'New Gmail inbox',
-                                  style: TextStyle(
+                                Text(
+                                  email['subject']!,
+                                  style: const TextStyle(
                                     fontSize: 22,
                                     fontWeight: FontWeight.w500,
+                                    fontFamily: 'Roboto',
                                   ),
                                 ),
                                 const SizedBox(width: 8),
                                 SvgPicture.asset(
                                   'assets/icon/yellow-title-tag.svg',
-                                  height: 24,
+                                  height: 16,
                                 ),
                                 Container(
                                   padding: const EdgeInsets.symmetric(
@@ -279,16 +286,22 @@ class Gmail extends StatelessWidget {
                                     color: const Color(0xFFe0e0e0),
                                     borderRadius: BorderRadius.circular(4),
                                   ),
-                                  child: const Row(
+                                  child: Row(
                                     children: [
                                       Text(
                                         'Inbox',
-                                        style: TextStyle(fontSize: 11),
+                                        style: const TextStyle(
+                                          fontSize: 11,
+                                          fontFamily: 'Roboto',
+                                        ),
                                       ),
-                                      SizedBox(width: 4),
-                                      Text(
+                                      const SizedBox(width: 4),
+                                      const Text(
                                         'x',
-                                        style: TextStyle(fontSize: 8),
+                                        style: TextStyle(
+                                          fontSize: 8,
+                                          fontFamily: 'Roboto',
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -298,11 +311,11 @@ class Gmail extends StatelessWidget {
                             Row(
                               children: [
                                 IconButton(
-                                  icon: const Icon(Icons.print),
+                                  icon: const Icon(Icons.print, size: 18),
                                   onPressed: () {},
                                 ),
                                 IconButton(
-                                  icon: const Icon(Icons.open_in_new),
+                                  icon: const Icon(Icons.open_in_new, size: 18),
                                   onPressed: () {},
                                 ),
                               ],
@@ -316,13 +329,13 @@ class Gmail extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Row(
+                            Row(
                               children: [
                                 CircleAvatar(
                                   backgroundImage:
-                                      AssetImage('assets/img/avatar.svg'),
+                                      AssetImage(email['avatar']!),
                                 ),
-                                SizedBox(width: 8),
+                                const SizedBox(width: 8),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -330,26 +343,33 @@ class Gmail extends StatelessWidget {
                                       children: [
                                         Text(
                                           'FROM ',
-                                          style: TextStyle(
+                                          style: const TextStyle(
                                             fontWeight: FontWeight.bold,
+                                            fontFamily: 'Roboto',
                                           ),
                                         ),
-                                        Text('<email@mail.service>'),
-                                        SizedBox(width: 8),
-                                        Text(
+                                        Text(email['sender']!),
+                                        const SizedBox(width: 8),
+                                        const Text(
                                           'Unsubscribe',
                                           style: TextStyle(
                                             fontSize: 10,
                                             decoration:
                                                 TextDecoration.underline,
+                                            fontFamily: 'Roboto',
                                           ),
                                         ),
                                       ],
                                     ),
                                     Row(
                                       children: [
-                                        Text('to me'),
-                                        Icon(Icons.arrow_drop_down),
+                                        const Text(
+                                          'to me',
+                                          style: TextStyle(
+                                            fontFamily: 'Roboto',
+                                          ),
+                                        ),
+                                        const Icon(Icons.arrow_drop_down, size: 18),
                                       ],
                                     ),
                                   ],
@@ -358,17 +378,22 @@ class Gmail extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                const Text('8:02 AM (34 minutes ago)'),
+                                Text(
+                                  email['time']!,
+                                  style: const TextStyle(
+                                    fontFamily: 'Roboto',
+                                  ),
+                                ),
                                 IconButton(
-                                  icon: const Icon(Icons.star_border),
+                                  icon: const Icon(Icons.star_border, size: 18),
                                   onPressed: () {},
                                 ),
                                 IconButton(
-                                  icon: const Icon(Icons.reply),
+                                  icon: const Icon(Icons.reply, size: 18),
                                   onPressed: () {},
                                 ),
                                 IconButton(
-                                  icon: const Icon(Icons.more_vert),
+                                  icon: const Icon(Icons.more_vert, size: 18),
                                   onPressed: () {},
                                 ),
                               ],
@@ -383,81 +408,15 @@ class Gmail extends StatelessWidget {
                 Expanded(
                   child: Container(
                     color: const Color(0xFFebfaff),
-                    child: Column(
-                      children: [
-                        // Email Content
-                        Container(
-                          width: 660,
-                          margin: const EdgeInsets.symmetric(vertical: 31),
-                          child: Column(
-                            children: [
-                              // Top Section
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      color: const Color(0xFF04bdff),
-                                      padding: const EdgeInsets.all(16),
-                                      child: Column(
-                                        children: [
-                                          const Text(
-                                            'Gmail inbox\ntemplate',
-                                            style: TextStyle(
-                                              fontSize: 40,
-                                              color: Colors.white,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 16),
-                                          ElevatedButton(
-                                            onPressed: () {},
-                                            child: const Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Text('See more'),
-                                                Icon(Icons.arrow_forward),
-                                              ],
-                                            ),
-                                            style: ElevatedButton.styleFrom(
-                                              foregroundColor:
-                                                  const Color(0xFF04bdff),
-                                              backgroundColor: Colors.white,
-                                              shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(4),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      color: const Color(0xFF0397cc),
-                                      child: Center(
-                                        child: SvgPicture.asset(
-                                          'assets/img/mail-img-placeholder.svg',
-                                          height: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              // Bottom Section
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  _buildMailCard(),
-                                  _buildMailCard(),
-                                  _buildMailCard(),
-                                ],
-                              ),
-                            ],
-                          ),
+                    child: SingleChildScrollView(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        email['snippet']!,
+                        style: const TextStyle(
+                          fontSize: 16,
+                          fontFamily: 'Roboto',
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ),
@@ -496,7 +455,7 @@ class Gmail extends StatelessWidget {
   }
 
   Widget _buildMenuItem({
-    required String icon,
+    required IconData icon,
     required String text,
     String? count,
     bool selected = false,
@@ -504,7 +463,7 @@ class Gmail extends StatelessWidget {
     return Container(
       color: selected ? const Color(0xFFfce8e7) : Colors.transparent,
       child: ListTile(
-        leading: SvgPicture.asset(icon, height: 24),
+        leading: Icon(icon, size: 24),
         title: Text(text),
         trailing: count != null ? Text(count) : null,
       ),
